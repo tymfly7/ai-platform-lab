@@ -1,0 +1,19 @@
+[project]
+name = "llm-basics"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tymfly7", email = "ggit@keemail.me" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "openai>=3.22.1",
+]
+
+[project.scripts]
+llm-basics = "llm_basics:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
