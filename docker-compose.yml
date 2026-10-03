@@ -1,0 +1,28 @@
+services:
+  litellm:
+    image: ghcr.io/berriai/litellm:main-stable
+    command: ["--config", "/app/config.yaml", "--port", "4000"]
+    volumes:
+      - ./gateway/config.yaml:/app/config.yaml:ro
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://llm:llm@db:5432/platform
+      LANGFUSE_HOST: http://host.docker.internal:3000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "4000:4000"
+    depends_on:
+      - db
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: llm
+      POSTGRES_PASSWORD: llm
+      POSTGRES_DB: platform
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
