@@ -96,3 +96,8 @@ done
 0.524 [hr-001] Employees get 5 weeks of paid holiday per year.
 ```
 
+- Paraphrased English questions: correct, distance below 0.43.
+- Unrelated question: all results above 0.65.
+- Czech question: no clear match. 
+- Document IDs: not matched. Needs keyword search.
+
