@@ -8,6 +8,7 @@ services:
     environment:
       DATABASE_URL: postgresql://llm:llm@db:5432/platform
       LANGFUSE_HOST: http://host.docker.internal:3000
+      LANGFUSE_OTEL_HOST: http://host.docker.internal:3000
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:

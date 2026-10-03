@@ -10,7 +10,7 @@ and monitored.
 This repo contains a small version of such a platform. It runs locally with Docker.
 Models: Google Gemini (paid API) and Ollama (local).
 
-## What works so far
+## The Journey
 
 | Component | What it does | Folder | State |
 |---|---|---|---|
@@ -18,7 +18,7 @@ Models: Google Gemini (paid API) and Ollama (local).
 | Document search | Stores company documents with embeddings in PostgreSQL (pgvector) and finds the ones closest in meaning to a question. | `services/rag-api/` | Working |
 | Model experiments | Scripts that call models directly, measure token usage, and test how much answers vary between runs. | `playground/llm-basics/` | Working |
 | Containerized API | A minimal FastAPI service packaged as a Docker image. Template for the other services. | `playground/hello-api/` | Working |
-| Tracing | Records every model call, search and tool use, with timing and cost. | | Planned |
+| Tracing | Records every model call, search and tool use, with timing and cost. | | Working |
 | Question answering with access control | Answers questions from documents. Each user only gets answers from documents their group may read. | | Planned |
 | Agent with human approval | An AI that uses tools. Actions that change something wait for a person to approve them. | | Planned |
 | Automated evaluation | Tests answer quality and safety on every code change in GitHub Actions. | | Planned |
