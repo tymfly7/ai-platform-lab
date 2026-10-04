@@ -1,0 +1,22 @@
+[project]
+name = "agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tymfly7", email = "ggit@keemail.me" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.142.2",
+    "langfuse>=4.16.0",
+    "openai>=3.24.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+agent = "agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"

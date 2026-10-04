@@ -160,5 +160,5 @@ Results:
 
 - Paraphrased English questions: correct, distance below 0.43.
 - Unrelated question: all results above 0.65.
-- Czech question: no clear match. The model is English-only.
+- Czech question: no clear match. 
 - Document IDs: not matched. Needs keyword search.
