@@ -16,7 +16,7 @@ and its current state.
 
 - Caller identity comes from the `X-User-Group` header. Any caller can set it.
 - The approval endpoint has no authentication. Any caller can approve under any name.
-- No automated tests for prompt injection or data leakage yet.
+- Automated tests cover the RAG API only. The agent has no automated tests.
 
 ## Data handling
 
