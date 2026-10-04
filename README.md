@@ -19,8 +19,8 @@ Models: Google Gemini (paid API) and Ollama (local).
 | Model experiments | Scripts that call models directly, measure token usage, and test how much answers vary between runs. | `playground/llm-basics/` | Working |
 | Containerized API | A minimal FastAPI service packaged as a Docker image. Template for the other services. | `playground/hello-api/` | Working |
 | Tracing | Records every model call, search and tool use, with timing and cost. | | Working |
-| Question answering with access control | Answers questions from documents. Each user only gets answers from documents their group may read. | | Planned |
-| Agent with human approval | An AI that uses tools. Actions that change something wait for a person to approve them. | | Planned |
+| Question answering with access control | Answers questions from documents. Each user only gets answers from documents their group may read. | | Working |
+| Agent with human approval | An AI that uses tools. Actions that change something wait for a person to approve them. | | Working |
 | Automated evaluation | Tests answer quality and safety on every code change in GitHub Actions. | | Planned |
 | Cloud deployment | Runs the gateway in Azure, with secrets in Key Vault and deployment from GitHub without stored passwords. | | Planned |
 
